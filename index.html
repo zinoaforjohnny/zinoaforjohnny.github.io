@@ -1,91 +1,602 @@
+```html
 <!doctype html>
 <html lang="en">
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
+
 <title>Ewomazino Afor-Johnny, OD | Medical Writer</title>
+
 <meta name="description" content="Medical writer and optometrist helping healthcare brands turn complex medical information into clear, credible, patient-friendly content.">
+
 <style>
-:root{--ink:#132238;--muted:#607086;--line:#dfe7ef;--bg:#f7fafc;--accent:#176b87}
-*{box-sizing:border-box}html{scroll-behavior:smooth}
-body{margin:0;font:16px/1.65 Arial,Helvetica,sans-serif;color:var(--ink)}
-nav{position:sticky;top:0;background:#fff;border-bottom:1px solid var(--line);z-index:10}
-.nav{max-width:1100px;margin:auto;padding:16px 24px;display:flex;justify-content:space-between;align-items:center}
-.logo{font-weight:800}.nav a{color:var(--ink);text-decoration:none;margin-left:22px;font-size:14px}
-.hero{background:linear-gradient(135deg,#edf7fa,#f8fbfd);padding:100px 24px 90px}
-.wrap{max-width:1100px;margin:auto}.eyebrow{text-transform:uppercase;letter-spacing:2px;font-size:12px;font-weight:700;color:var(--accent)}
-h1{font-size:clamp(42px,7vw,76px);line-height:1.02;margin:14px 0 22px;max-width:850px}
-h2{font-size:36px;line-height:1.15;margin:0 0 18px}h3{margin:0 0 8px}
-.lead{font-size:21px;max-width:760px;color:var(--muted)}
-.buttons{margin-top:30px}.btn{display:inline-block;padding:13px 20px;border-radius:7px;text-decoration:none;font-weight:700;margin:0 10px 10px 0}.primary{background:var(--ink);color:#fff}.secondary{border:1px solid #b9c8d6;color:var(--ink)}
-section{padding:80px 24px}.soft{background:var(--bg)}
-.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;margin-top:35px}
-.card{border:1px solid var(--line);border-radius:12px;padding:26px;background:#fff}.card p{color:var(--muted)}
-.two{display:grid;grid-template-columns:1.1fr .9fr;gap:55px;align-items:start}
-.portfolio{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:35px}
-.tag{display:inline-block;background:#eaf4f7;color:var(--accent);padding:5px 9px;border-radius:20px;font-size:12px;font-weight:700;margin-bottom:12px}
-.quote{border-left:4px solid var(--accent);padding:15px 20px;background:#f2f8fa;margin-top:28px}
-.contact{background:var(--ink);color:#fff}.contact .lead{color:#c9d4df}.contact a{color:#fff}
-footer{text-align:center;padding:25px;color:var(--muted);font-size:13px}
-@media(max-width:750px){.grid,.portfolio,.two{grid-template-columns:1fr}.navlinks{display:none}section{padding:60px 20px}.hero{padding:70px 20px}}
+:root{
+  --ink:#132238;
+  --muted:#607086;
+  --line:#dfe7ef;
+  --bg:#f7fafc;
+  --accent:#176b87
+}
+
+*{box-sizing:border-box}
+
+html{scroll-behavior:smooth}
+
+body{
+  margin:0;
+  font:16px/1.65 Arial,Helvetica,sans-serif;
+  color:var(--ink)
+}
+
+nav{
+  position:sticky;
+  top:0;
+  background:#fff;
+  border-bottom:1px solid var(--line);
+  z-index:10
+}
+
+.nav{
+  max-width:1100px;
+  margin:auto;
+  padding:16px 24px;
+  display:flex;
+  justify-content:space-between;
+  align-items:center
+}
+
+.logo{font-weight:800}
+
+.nav a{
+  color:var(--ink);
+  text-decoration:none;
+  margin-left:22px;
+  font-size:14px
+}
+
+.hero{
+  background:linear-gradient(135deg,#edf7fa,#f8fbfd);
+  padding:100px 24px 90px
+}
+
+.wrap{
+  max-width:1100px;
+  margin:auto
+}
+
+.eyebrow{
+  text-transform:uppercase;
+  letter-spacing:2px;
+  font-size:12px;
+  font-weight:700;
+  color:var(--accent)
+}
+
+h1{
+  font-size:clamp(42px,7vw,76px);
+  line-height:1.02;
+  margin:14px 0 22px;
+  max-width:850px
+}
+
+h2{
+  font-size:36px;
+  line-height:1.15;
+  margin:0 0 18px
+}
+
+h3{
+  margin:0 0 8px
+}
+
+.lead{
+  font-size:21px;
+  max-width:760px;
+  color:var(--muted)
+}
+
+.buttons{
+  margin-top:30px
+}
+
+.btn{
+  display:inline-block;
+  padding:13px 20px;
+  border-radius:7px;
+  text-decoration:none;
+  font-weight:700;
+  margin:0 10px 10px 0
+}
+
+.primary{
+  background:var(--ink);
+  color:#fff
+}
+
+.secondary{
+  border:1px solid #b9c8d6;
+  color:var(--ink)
+}
+
+section{
+  padding:80px 24px
+}
+
+.soft{
+  background:var(--bg)
+}
+
+.grid{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:22px;
+  margin-top:35px
+}
+
+.card{
+  border:1px solid var(--line);
+  border-radius:12px;
+  padding:26px;
+  background:#fff
+}
+
+.card p{
+  color:var(--muted)
+}
+
+.two{
+  display:grid;
+  grid-template-columns:1.1fr .9fr;
+  gap:55px;
+  align-items:start
+}
+
+.portfolio{
+  display:grid;
+  grid-template-columns:repeat(2,1fr);
+  gap:22px;
+  margin-top:35px
+}
+
+.tag{
+  display:inline-block;
+  background:#eaf4f7;
+  color:var(--accent);
+  padding:5px 9px;
+  border-radius:20px;
+  font-size:12px;
+  font-weight:700;
+  margin-bottom:12px
+}
+
+.quote{
+  border-left:4px solid var(--accent);
+  padding:15px 20px;
+  background:#f2f8fa;
+  margin-top:28px
+}
+
+/* CONTACT */
+
+.contact{
+  background:var(--ink);
+  color:#fff
+}
+
+.contact .lead{
+  color:#c9d4df
+}
+
+.social-intro{
+  color:#c9d4df;
+  margin:0 0 20px
+}
+
+.social-links{
+  display:flex;
+  gap:20px;
+  align-items:center;
+  margin-top:20px
+}
+
+.social-links a{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  width:50px;
+  height:50px;
+  color:#fff;
+  text-decoration:none;
+  border:1px solid rgba(255,255,255,.25);
+  border-radius:10px;
+  transition:all .2s ease
+}
+
+.social-links a:hover{
+  transform:translateY(-3px);
+  background:rgba(255,255,255,.1);
+  border-color:rgba(255,255,255,.55)
+}
+
+.social-links svg{
+  width:25px;
+  height:25px;
+  fill:currentColor
+}
+
+footer{
+  text-align:center;
+  padding:25px;
+  color:var(--muted);
+  font-size:13px
+}
+
+@media(max-width:750px){
+  .grid,
+  .portfolio,
+  .two{
+    grid-template-columns:1fr
+  }
+
+  .navlinks{
+    display:none
+  }
+
+  section{
+    padding:60px 20px
+  }
+
+  .hero{
+    padding:70px 20px
+  }
+}
 </style>
 </head>
+
 <body>
-<nav><div class="nav"><div class="logo">Ewomazino Afor-Johnny, OD</div><div class="navlinks">
-<a href="#about">About</a><a href="#services">Services</a><a href="#portfolio">Portfolio</a><a href="#contact">Contact</a>
-</div></div></nav>
 
-<header class="hero"><div class="wrap">
-<div class="eyebrow">Medical Writing • Healthcare Content • Optometry</div>
-<h1>Clear healthcare writing backed by clinical knowledge.</h1>
-<p class="lead">I help healthcare brands turn complex medical information into clear, credible and patient-friendly content that people can understand and trust.</p>
-<div class="buttons"><a class="btn primary" href="#portfolio">View my work</a><a class="btn secondary" href="#contact">Work with me</a></div>
-</div></header>
+<nav>
+  <div class="nav">
 
-<section id="about"><div class="wrap two">
-<div><div class="eyebrow">About</div><h2>A clinician who writes for real people.</h2>
-<p>I am an optometrist and medical writer with hands-on experience communicating eye and healthcare information to patients and healthcare audiences.</p>
-<p>My clinical background helps me understand medical terminology, research findings and patient concerns. I turn that knowledge into useful content without unnecessary jargon.</p>
-<div class="quote"><strong>My approach:</strong> accurate enough for healthcare professionals, clear enough for patients.</div></div>
-<div class="card"><h3>What I bring</h3><ul>
-<li>Clinical healthcare knowledge</li><li>Patient-focused communication</li><li>Medical and health article writing</li><li>SEO-friendly content structure</li><li>Clear, evidence-conscious writing</li><li>Professional editing and proofreading</li>
-</ul></div></div></section>
+    <div class="logo">
+      Ewomazino Afor-Johnny, OD
+    </div>
 
-<section id="services" class="soft"><div class="wrap"><div class="eyebrow">Services</div><h2>Healthcare content that has a purpose.</h2>
-<div class="grid">
-<div class="card"><h3>Medical Writing</h3><p>Accurate, readable articles and educational content covering medical and healthcare topics.</p></div>
-<div class="card"><h3>SEO Health Content</h3><p>Search-focused healthcare articles structured around reader intent, useful headings and natural keyword use.</p></div>
-<div class="card"><h3>Patient Education</h3><p>Easy-to-understand guides, flyers and educational materials that help patients make sense of health information.</p></div>
-<div class="card"><h3>Healthcare Website Copy</h3><p>Clear service pages, about pages and website content designed to communicate credibility and build trust.</p></div>
-<div class="card"><h3>Health &amp; Wellness Content</h3><p>Accessible content for brands, clinics and platforms communicating health and wellness topics.</p></div>
-<div class="card"><h3>Editing &amp; Proofreading</h3><p>Improve clarity, structure, grammar and readability while preserving the intended message.</p></div>
-</div></div></section>
+    <div class="navlinks">
+      <a href="#about">About</a>
+      <a href="#services">Services</a>
+      <a href="#portfolio">Portfolio</a>
+      <a href="#contact">Contact</a>
+    </div>
 
-<section id="portfolio"><div class="wrap"><div class="eyebrow">Selected Work</div><h2>Writing samples.</h2>
-<div class="portfolio">
-<div class="card"><span class="tag">PATIENT EDUCATION</span><h3>Early Detection Saves Sight</h3><p>Why routine eye examinations matter, what an eye exam can detect, and why waiting for symptoms can be risky.</p></div>
-<div class="card"><span class="tag">HEALTH ARTICLE</span><h3>7 Warning Signs You Should See an Eye Doctor</h3><p>A patient-friendly guide explaining symptoms that deserve professional eye assessment.</p></div>
-<div class="card"><span class="tag">MEDICAL EXPLAINER</span><h3>What Is Glaucoma?</h3><p>A plain-language explanation of glaucoma, risk factors, symptoms, diagnosis and monitoring.</p></div>
-<div class="card"><span class="tag">SEO ARTICLE</span><h3>Dry Eye: Causes, Symptoms and Treatment</h3><p>A structured health article designed to answer common patient questions while remaining clinically responsible.</p></div>
-</div>
-<p style="color:var(--muted);margin-top:25px">Portfolio samples created to demonstrate writing ability. Client work can be added as it becomes available.</p>
-</div></section>
+  </div>
+</nav>
 
-<section class="soft"><div class="wrap two">
-<div><div class="eyebrow">Why Work With Me</div><h2>Medical knowledge + communication.</h2></div>
-<div><p>Healthcare content has to do more than sound professional. It needs to be understandable, responsible and useful.</p>
-<p>My advantage is the combination of clinical training and reader-friendly communication.</p>
-<p><strong>Ideal clients:</strong> healthcare brands, clinics, health-tech companies, medical websites, wellness companies and agencies looking for a writer who understands healthcare.</p></div>
-</div></section>
 
-<section id="contact" class="contact"><div class="wrap two">
-<div><div class="eyebrow">Contact</div><h2>Have a healthcare writing project?</h2><p class="lead">Tell me what you're building and what you need written.</p></div>
-<div>
-<p><strong>Linkedin</strong><br><a href="https://www.linkedin.com/" target="_blank">https://www.linkedin.com/in/ewomazino-afor-johnny-od-75159116b/</a></p>
-<p><strong>Upwork</strong><br><a href="https://www.upwork.com/" target="_blank">www.upwork.com/freelancers/~010d53eaaa2afd3e7a</a></p>
-<p><strong>Email</strong><br><a href="mailto:yourname@example.com">yourname@example.com</a></p>
-</div></div></section>
+<header class="hero">
+  <div class="wrap">
 
-<footer>© 2026 Ewomazino Afor-Johnny, OD. Medical Writer &amp; Healthcare Content Specialist.</footer>
+    <div class="eyebrow">
+      Medical Writing • Healthcare Content • Optometry
+    </div>
+
+    <h1>
+      Clear healthcare writing backed by clinical knowledge.
+    </h1>
+
+    <p class="lead">
+      I help healthcare brands turn complex medical information into clear,
+      credible and patient-friendly content that people can understand and trust.
+    </p>
+
+    <div class="buttons">
+      <a class="btn primary" href="#portfolio">View my work</a>
+      <a class="btn secondary" href="#contact">Work with me</a>
+    </div>
+
+  </div>
+</header>
+
+
+<section id="about">
+  <div class="wrap two">
+
+    <div>
+
+      <div class="eyebrow">About</div>
+
+      <h2>
+        A clinician who writes for real people.
+      </h2>
+
+      <p>
+        I am an optometrist and medical writer with hands-on experience
+        communicating eye and healthcare information to patients and
+        healthcare audiences.
+      </p>
+
+      <p>
+        My clinical background helps me understand medical terminology,
+        research findings and patient concerns. I turn that knowledge
+        into useful content without unnecessary jargon.
+      </p>
+
+      <div class="quote">
+        <strong>My approach:</strong>
+        accurate enough for healthcare professionals, clear enough for patients.
+      </div>
+
+    </div>
+
+
+    <div class="card">
+
+      <h3>What I bring</h3>
+
+      <ul>
+        <li>Clinical healthcare knowledge</li>
+        <li>Patient-focused communication</li>
+        <li>Medical and health article writing</li>
+        <li>SEO-friendly content structure</li>
+        <li>Clear, evidence-conscious writing</li>
+        <li>Professional editing and proofreading</li>
+      </ul>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section id="services" class="soft">
+  <div class="wrap">
+
+    <div class="eyebrow">Services</div>
+
+    <h2>
+      Healthcare content that has a purpose.
+    </h2>
+
+    <div class="grid">
+
+      <div class="card">
+        <h3>Medical Writing</h3>
+        <p>
+          Accurate, readable articles and educational content covering
+          medical and healthcare topics.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>SEO Health Content</h3>
+        <p>
+          Search-focused healthcare articles structured around reader intent,
+          useful headings and natural keyword use.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Patient Education</h3>
+        <p>
+          Easy-to-understand guides, flyers and educational materials that
+          help patients make sense of health information.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Healthcare Website Copy</h3>
+        <p>
+          Clear service pages, about pages and website content designed
+          to communicate credibility and build trust.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Health &amp; Wellness Content</h3>
+        <p>
+          Accessible content for brands, clinics and platforms communicating
+          health and wellness topics.
+        </p>
+      </div>
+
+      <div class="card">
+        <h3>Editing &amp; Proofreading</h3>
+        <p>
+          Improve clarity, structure, grammar and readability while preserving
+          the intended message.
+        </p>
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section id="portfolio">
+  <div class="wrap">
+
+    <div class="eyebrow">Selected Work</div>
+
+    <h2>
+      Writing samples.
+    </h2>
+
+    <div class="portfolio">
+
+      <div class="card">
+        <span class="tag">PATIENT EDUCATION</span>
+        <h3>Early Detection Saves Sight</h3>
+        <p>
+          Why routine eye examinations matter, what an eye exam can detect,
+          and why waiting for symptoms can be risky.
+        </p>
+      </div>
+
+      <div class="card">
+        <span class="tag">HEALTH ARTICLE</span>
+        <h3>7 Warning Signs You Should See an Eye Doctor</h3>
+        <p>
+          A patient-friendly guide explaining symptoms that deserve
+          professional eye assessment.
+        </p>
+      </div>
+
+      <div class="card">
+        <span class="tag">MEDICAL EXPLAINER</span>
+        <h3>What Is Glaucoma?</h3>
+        <p>
+          A plain-language explanation of glaucoma, risk factors,
+          symptoms, diagnosis and monitoring.
+        </p>
+      </div>
+
+      <div class="card">
+        <span class="tag">SEO ARTICLE</span>
+        <h3>Dry Eye: Causes, Symptoms and Treatment</h3>
+        <p>
+          A structured health article designed to answer common patient
+          questions while remaining clinically responsible.
+        </p>
+      </div>
+
+    </div>
+
+    <p style="color:var(--muted);margin-top:25px">
+      Portfolio samples created to demonstrate writing ability.
+      Client work can be added as it becomes available.
+    </p>
+
+  </div>
+</section>
+
+
+<section class="soft">
+  <div class="wrap two">
+
+    <div>
+
+      <div class="eyebrow">
+        Why Work With Me
+      </div>
+
+      <h2>
+        Medical knowledge + communication.
+      </h2>
+
+    </div>
+
+    <div>
+
+      <p>
+        Healthcare content has to do more than sound professional.
+        It needs to be understandable, responsible and useful.
+      </p>
+
+      <p>
+        My advantage is the combination of clinical training and
+        reader-friendly communication.
+      </p>
+
+      <p>
+        <strong>Ideal clients:</strong>
+        healthcare brands, clinics, health-tech companies, medical websites,
+        wellness companies and agencies looking for a writer who understands healthcare.
+      </p>
+
+    </div>
+
+  </div>
+</section>
+
+
+<section id="contact" class="contact">
+  <div class="wrap two">
+
+    <div>
+
+      <div class="eyebrow">Contact</div>
+
+      <h2>
+        Have a healthcare writing project?
+      </h2>
+
+      <p class="lead">
+        Tell me what you're building and what you need written.
+      </p>
+
+    </div>
+
+
+    <div>
+
+      <h3>Let's connect</h3>
+
+      <p class="social-intro">
+        Find me online or send me an email.
+      </p>
+
+
+      <div class="social-links">
+
+        <!-- LINKEDIN -->
+        <a
+          href="https://www.linkedin.com/in/ewomazino-afor-johnny-od-75159116b/"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="LinkedIn"
+          title="LinkedIn"
+        >
+
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.44-2.13 2.94v5.67H9.35V8.99h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.26 2.37 4.26 5.46v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM3.56 20.45h3.56V8.99H3.56v11.46z"/>
+          </svg>
+
+        </a>
+
+
+        <!-- UPWORK -->
+        <a
+          href="https://www.upwork.com/freelancers/~010d53eaaa2afd3e7a"
+          target="_blank"
+          rel="noopener noreferrer"
+          aria-label="Upwork"
+          title="Upwork"
+        >
+
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M17.1 7.2c-1.8 0-3.3 1-4.2 2.6-.6-1.2-1.1-2.6-1.4-4H8.7v5.7c0 1.2-.6 2-1.6 2-1 0-1.6-.8-1.6-2V5.8H3v3.7c0 3 1.6 5 4.1 5 1.4 0 2.5-.6 3.1-1.6.3.7.7 1.3 1.1 1.8v4.1h2.8v-5.8c.7-1.1 1.7-2.2 3-2.2 1.1 0 1.9.7 1.9 1.8 0 1.2-.9 1.9-2.2 1.9-.5 0-1-.1-1.4-.3v2.5c.5.2 1.1.3 1.7.3 2.8 0 4.8-1.7 4.8-4.4 0-2.4-1.9-4.1-4.8-4.1z"/>
+          </svg>
+
+        </a>
+
+
+        <!-- EMAIL -->
+        <a
+          href="mailto:yourname@example.com"
+          aria-label="Email"
+          title="Email"
+        >
+
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
+          </svg>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+</section>
+
+
+<footer>
+  © 2026 Ewomazino Afor-Johnny, OD.
+  Medical Writer &amp; Healthcare Content Specialist.
+</footer>
+
 </body>
 </html>
+```
