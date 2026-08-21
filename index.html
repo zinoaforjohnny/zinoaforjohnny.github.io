@@ -1,6 +1,7 @@
 ```html
 <!doctype html>
 <html lang="en">
+
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -10,6 +11,7 @@
 <meta name="description" content="Medical writer and optometrist helping healthcare brands turn complex medical information into clear, credible, patient-friendly content.">
 
 <style>
+
 :root{
   --ink:#132238;
   --muted:#607086;
@@ -18,14 +20,19 @@
   --accent:#176b87
 }
 
-*{box-sizing:border-box}
+*{
+  box-sizing:border-box
+}
 
-html{scroll-behavior:smooth}
+html{
+  scroll-behavior:smooth
+}
 
 body{
   margin:0;
   font:16px/1.65 Arial,Helvetica,sans-serif;
-  color:var(--ink)
+  color:var(--ink);
+  background:#fff
 }
 
 nav{
@@ -45,13 +52,19 @@ nav{
   align-items:center
 }
 
-.logo{font-weight:800}
+.logo{
+  font-weight:800
+}
 
 .nav a{
   color:var(--ink);
   text-decoration:none;
   margin-left:22px;
   font-size:14px
+}
+
+.nav a:hover{
+  color:var(--accent)
 }
 
 .hero{
@@ -118,6 +131,14 @@ h3{
   color:var(--ink)
 }
 
+.primary:hover{
+  opacity:.9
+}
+
+.secondary:hover{
+  background:#edf4f7
+}
+
 section{
   padding:80px 24px
 }
@@ -176,11 +197,15 @@ section{
   margin-top:28px
 }
 
-/* CONTACT */
+/* CONTACT SECTION */
 
 .contact{
   background:var(--ink);
   color:#fff
+}
+
+.contact .eyebrow{
+  color:#2c9abd
 }
 
 .contact .lead{
@@ -232,6 +257,7 @@ footer{
 }
 
 @media(max-width:750px){
+
   .grid,
   .portfolio,
   .two{
@@ -249,13 +275,20 @@ footer{
   .hero{
     padding:70px 20px
   }
+
 }
+
 </style>
 </head>
 
+
 <body>
 
+
+<!-- NAVIGATION -->
+
 <nav>
+
   <div class="nav">
 
     <div class="logo">
@@ -263,17 +296,27 @@ footer{
     </div>
 
     <div class="navlinks">
+
       <a href="#about">About</a>
+
       <a href="#services">Services</a>
+
       <a href="#portfolio">Portfolio</a>
+
       <a href="#contact">Contact</a>
+
     </div>
 
   </div>
+
 </nav>
 
 
+
+<!-- HERO -->
+
 <header class="hero">
+
   <div class="wrap">
 
     <div class="eyebrow">
@@ -290,20 +333,34 @@ footer{
     </p>
 
     <div class="buttons">
-      <a class="btn primary" href="#portfolio">View my work</a>
-      <a class="btn secondary" href="#contact">Work with me</a>
+
+      <a class="btn primary" href="#portfolio">
+        View my work
+      </a>
+
+      <a class="btn secondary" href="#contact">
+        Work with me
+      </a>
+
     </div>
 
   </div>
+
 </header>
 
 
+
+<!-- ABOUT -->
+
 <section id="about">
+
   <div class="wrap two">
 
     <div>
 
-      <div class="eyebrow">About</div>
+      <div class="eyebrow">
+        About
+      </div>
 
       <h2>
         A clinician who writes for real people.
@@ -322,8 +379,11 @@ footer{
       </p>
 
       <div class="quote">
+
         <strong>My approach:</strong>
-        accurate enough for healthcare professionals, clear enough for patients.
+        accurate enough for healthcare professionals,
+        clear enough for patients.
+
       </div>
 
     </div>
@@ -331,148 +391,256 @@ footer{
 
     <div class="card">
 
-      <h3>What I bring</h3>
+      <h3>
+        What I bring
+      </h3>
 
       <ul>
+
         <li>Clinical healthcare knowledge</li>
+
         <li>Patient-focused communication</li>
+
         <li>Medical and health article writing</li>
+
         <li>SEO-friendly content structure</li>
+
         <li>Clear, evidence-conscious writing</li>
+
         <li>Professional editing and proofreading</li>
+
       </ul>
 
     </div>
 
   </div>
+
 </section>
 
 
+
+<!-- SERVICES -->
+
 <section id="services" class="soft">
+
   <div class="wrap">
 
-    <div class="eyebrow">Services</div>
+    <div class="eyebrow">
+      Services
+    </div>
 
     <h2>
       Healthcare content that has a purpose.
     </h2>
 
+
     <div class="grid">
 
+
       <div class="card">
-        <h3>Medical Writing</h3>
+
+        <h3>
+          Medical Writing
+        </h3>
+
         <p>
           Accurate, readable articles and educational content covering
           medical and healthcare topics.
         </p>
+
       </div>
 
+
       <div class="card">
-        <h3>SEO Health Content</h3>
+
+        <h3>
+          SEO Health Content
+        </h3>
+
         <p>
           Search-focused healthcare articles structured around reader intent,
           useful headings and natural keyword use.
         </p>
+
       </div>
 
+
       <div class="card">
-        <h3>Patient Education</h3>
+
+        <h3>
+          Patient Education
+        </h3>
+
         <p>
           Easy-to-understand guides, flyers and educational materials that
           help patients make sense of health information.
         </p>
+
       </div>
 
+
       <div class="card">
-        <h3>Healthcare Website Copy</h3>
+
+        <h3>
+          Healthcare Website Copy
+        </h3>
+
         <p>
           Clear service pages, about pages and website content designed
           to communicate credibility and build trust.
         </p>
+
       </div>
 
+
       <div class="card">
-        <h3>Health &amp; Wellness Content</h3>
+
+        <h3>
+          Health &amp; Wellness Content
+        </h3>
+
         <p>
           Accessible content for brands, clinics and platforms communicating
           health and wellness topics.
         </p>
+
       </div>
 
+
       <div class="card">
-        <h3>Editing &amp; Proofreading</h3>
+
+        <h3>
+          Editing &amp; Proofreading
+        </h3>
+
         <p>
           Improve clarity, structure, grammar and readability while preserving
           the intended message.
         </p>
+
       </div>
+
 
     </div>
 
   </div>
+
 </section>
 
 
+
+<!-- PORTFOLIO -->
+
 <section id="portfolio">
+
   <div class="wrap">
 
-    <div class="eyebrow">Selected Work</div>
+    <div class="eyebrow">
+      Selected Work
+    </div>
 
     <h2>
       Writing samples.
     </h2>
 
+
     <div class="portfolio">
 
+
       <div class="card">
-        <span class="tag">PATIENT EDUCATION</span>
-        <h3>Early Detection Saves Sight</h3>
+
+        <span class="tag">
+          PATIENT EDUCATION
+        </span>
+
+        <h3>
+          Early Detection Saves Sight
+        </h3>
+
         <p>
           Why routine eye examinations matter, what an eye exam can detect,
           and why waiting for symptoms can be risky.
         </p>
+
       </div>
 
+
       <div class="card">
-        <span class="tag">HEALTH ARTICLE</span>
-        <h3>7 Warning Signs You Should See an Eye Doctor</h3>
+
+        <span class="tag">
+          HEALTH ARTICLE
+        </span>
+
+        <h3>
+          7 Warning Signs You Should See an Eye Doctor
+        </h3>
+
         <p>
           A patient-friendly guide explaining symptoms that deserve
           professional eye assessment.
         </p>
+
       </div>
 
+
       <div class="card">
-        <span class="tag">MEDICAL EXPLAINER</span>
-        <h3>What Is Glaucoma?</h3>
+
+        <span class="tag">
+          MEDICAL EXPLAINER
+        </span>
+
+        <h3>
+          What Is Glaucoma?
+        </h3>
+
         <p>
           A plain-language explanation of glaucoma, risk factors,
           symptoms, diagnosis and monitoring.
         </p>
+
       </div>
 
+
       <div class="card">
-        <span class="tag">SEO ARTICLE</span>
-        <h3>Dry Eye: Causes, Symptoms and Treatment</h3>
+
+        <span class="tag">
+          SEO ARTICLE
+        </span>
+
+        <h3>
+          Dry Eye: Causes, Symptoms and Treatment
+        </h3>
+
         <p>
           A structured health article designed to answer common patient
           questions while remaining clinically responsible.
         </p>
+
       </div>
+
 
     </div>
 
+
     <p style="color:var(--muted);margin-top:25px">
+
       Portfolio samples created to demonstrate writing ability.
       Client work can be added as it becomes available.
+
     </p>
 
   </div>
+
 </section>
 
 
+
+<!-- WHY WORK WITH ME -->
+
 <section class="soft">
+
   <div class="wrap two">
+
 
     <div>
 
@@ -485,6 +653,7 @@ footer{
       </h2>
 
     </div>
+
 
     <div>
 
@@ -499,23 +668,35 @@ footer{
       </p>
 
       <p>
+
         <strong>Ideal clients:</strong>
-        healthcare brands, clinics, health-tech companies, medical websites,
-        wellness companies and agencies looking for a writer who understands healthcare.
+        healthcare brands, clinics, health-tech companies,
+        medical websites, wellness companies and agencies
+        looking for a writer who understands healthcare.
+
       </p>
 
     </div>
 
+
   </div>
+
 </section>
 
 
+
+<!-- CONTACT -->
+
 <section id="contact" class="contact">
+
   <div class="wrap two">
+
 
     <div>
 
-      <div class="eyebrow">Contact</div>
+      <div class="eyebrow">
+        Contact
+      </div>
 
       <h2>
         Have a healthcare writing project?
@@ -530,7 +711,9 @@ footer{
 
     <div>
 
-      <h3>Let's connect</h3>
+      <h3>
+        Let's connect
+      </h3>
 
       <p class="social-intro">
         Find me online or send me an email.
@@ -539,7 +722,9 @@ footer{
 
       <div class="social-links">
 
+
         <!-- LINKEDIN -->
+
         <a
           href="https://www.linkedin.com/in/ewomazino-afor-johnny-od-75159116b/"
           target="_blank"
@@ -548,14 +733,21 @@ footer{
           title="LinkedIn"
         >
 
-          <svg viewBox="0 0 24 24" aria-hidden="true">
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+
             <path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.13 1.44-2.13 2.94v5.67H9.35V8.99h3.42v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.26 2.37 4.26 5.46v6.29zM5.34 7.43a2.06 2.06 0 1 1 0-4.12 2.06 2.06 0 0 1 0 4.12zM3.56 20.45h3.56V8.99H3.56v11.46z"/>
+
           </svg>
 
         </a>
 
 
+
         <!-- UPWORK -->
+
         <a
           href="https://www.upwork.com/freelancers/~010d53eaaa2afd3e7a"
           target="_blank"
@@ -564,39 +756,61 @@ footer{
           title="Upwork"
         >
 
-          <svg viewBox="0 0 24 24" aria-hidden="true">
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+
             <path d="M17.1 7.2c-1.8 0-3.3 1-4.2 2.6-.6-1.2-1.1-2.6-1.4-4H8.7v5.7c0 1.2-.6 2-1.6 2-1 0-1.6-.8-1.6-2V5.8H3v3.7c0 3 1.6 5 4.1 5 1.4 0 2.5-.6 3.1-1.6.3.7.7 1.3 1.1 1.8v4.1h2.8v-5.8c.7-1.1 1.7-2.2 3-2.2 1.1 0 1.9.7 1.9 1.8 0 1.2-.9 1.9-2.2 1.9-.5 0-1-.1-1.4-.3v2.5c.5.2 1.1.3 1.7.3 2.8 0 4.8-1.7 4.8-4.4 0-2.4-1.9-4.1-4.8-4.1z"/>
+
           </svg>
 
         </a>
 
 
+
         <!-- EMAIL -->
+
         <a
           href="mailto:ewomazinoaforjohnny@gmail.com"
           aria-label="Email"
           title="Email"
         >
 
-          <svg viewBox="0 0 24 24" aria-hidden="true">
+          <svg
+            viewBox="0 0 24 24"
+            aria-hidden="true"
+          >
+
             <path d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4-8 5-8-5V6l8 5 8-5v2z"/>
+
           </svg>
 
         </a>
+
 
       </div>
 
     </div>
 
+
   </div>
+
 </section>
 
 
+
+<!-- FOOTER -->
+
 <footer>
+
   © 2026 Ewomazino Afor-Johnny, OD.
   Medical Writer &amp; Healthcare Content Specialist.
+
 </footer>
 
+
 </body>
+
 </html>
 ```
